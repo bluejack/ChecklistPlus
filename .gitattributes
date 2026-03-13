@@ -1,0 +1,11 @@
+# Exclude from Package Control installs
+screenshots/ export-ignore
+*.gif export-ignore
+*.png export-ignore
+README.md export-ignore
+CHANGELOG.md export-ignore
+CONTRIBUTING.md export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+*.sublime-project export-ignore
+*.sublime-workspace export-ignore
