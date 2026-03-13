@@ -1,0 +1,169 @@
+{
+    "globals":
+    {
+        "background": "rgb(0, 13, 0)",
+        "foreground": "rgb(250, 255, 250)",
+        "caret": "rgb(150,200,150)",
+        "block_caret": "rgb(150,200, 150)",
+        "line_highlight": "rgb(66,0,66)",
+        "gutter": "rgb(0,0,33)",
+        "gutter_foreground": "rgb(50,120,220)",
+        "gutter_foreground_highlight": "rgb(80,200,255)",
+        "fold_marker": "rgb(200,0,220)",
+        "selection": "rgb(100,10,160)"
+    },
+    "rules":
+    [
+        {
+            "name": "Empty Check 1",
+            "scope": "checkbox.level1",
+            "foreground": "rgb(80,255,100)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Filled Check 1",
+            "scope": "checkbox.level1.filled",
+            "foreground": "rgb(80,180,100)",
+            "font_style": ""
+        },
+        {
+            "name": "Paused Check 1",
+            "scope": "checkbox.level1.paused",
+            "foreground": "rgb(200,255,210)",
+            "font_style": ""
+
+        },
+        {
+            "name": "Empty Check 2",
+            "scope": "checkbox.level2",
+            "foreground": "rgb(80,180,255)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Filled Check 2",
+            "scope": "checkbox.level2.filled",
+            "foreground": "rgb(70,120,200)",
+            "font_style": ""
+        },
+        {
+            "name": "Paused Check 2",
+            "scope": "checkbox.level2.paused",
+            "foreground": "rgb(180,220,255)",
+            "font_style": ""
+        },
+        {
+            "name": "Empty Check 3",
+            "scope": "checkbox.level3",
+            "foreground": "rgb(220,100,230)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Filled Check 3",
+            "scope": "checkbox.level3.filled",
+            "foreground": "rgb(150,60,180)",
+            "font_style": ""
+        },
+        {
+            "name": "Paused Check 3",
+            "scope": "checkbox.level3.paused",
+            "foreground": "rgb(220,180,230)",
+            "font_style": ""
+        },
+        {
+            "name": "Empty Check 4",
+            "scope": "checkbox.level4",
+            "foreground": "rgb(250,160,40)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Filled Check 4",
+            "scope": "checkbox.level4.filled",
+            "foreground": "rgb(220,120,0)",
+            "font_style": ""
+        },
+        {
+            "name": "Paused Check 4",
+            "scope": "checkbox.level4.paused",
+            "foreground": "rgb(250,200,150)",
+            "font_style": ""
+        },
+        {   "name": "List Level 0",
+            "scope": "list",
+            "foreground": "rgb(255,128,0)",
+            "font_style": "bold"
+        },
+        {   "name": "List Level 1",
+            "scope": "list.variant1",
+            "foreground": "rgb(255,60,0",
+            "font_style": "bold"
+        },
+        {   "name": "List Level 2",
+            "scope": "list.variant2",
+            "foreground": "rgb(227,197,64)",
+            "font_style": ""
+        },
+        {   "name": "List Level 3",
+            "scope": "list.variant3",
+            "foreground": "rgb(0,255,0)",
+            "fonr_style": "bold"
+        },
+        {   "name": "List Numeric",
+            "scope": "list.numeric",
+            "foreground": "rgb(50,240,177)",
+            "font_style": "bold"
+        },
+        {   "name": "Annotation Level 1",
+            "scope": "annotation.level1",
+            "foreground": "rgb(221,197,82)"
+        },
+        {   "name": "Annotation Level 2",
+            "scope": "annotation.level2",
+            "foreground": "rgb(202,153,56)"
+        },
+        {   "name": "Comment - Line",
+            "scope": "comment",
+            "foreground": "rgb(160,176,212)"
+        },
+        {   "name": "Comment - Block 1",
+            "scope": "comment.block",
+            "foreground": "rgb(193,151,244)"
+        },
+        {   "name": "Comment - Block 2",
+            "scope": "comment.block.variant1",
+            "foreground": "rgb(210,80,255)"
+        },
+        {   "name": "Comment - Block 3",
+            "scope": "comment.block.variant2",
+            "foreground": "rgb(190,210,255)"
+        },
+        {
+            "name": "Highlight",
+            "scope": "highlight",
+            "foreground": "rgb(84,244,255)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Header 1",
+            "scope": "header.level1",
+            "foreground": "rgb(255,255,80)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Header 2",
+            "scope": "header.level2",
+            "foreground": "rgb(235,245,70)"
+        },
+        {
+            "name": "Header 3",
+            "scope": "header.level3",
+            "foreground": "rgb(210,230,50)"
+        },
+        {
+            "name": "Link",
+            "scope": "markup.link",
+            "foreground": "rgb(120,240,255)"
+        }
+
+
+    ]
+}

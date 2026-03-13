@@ -1,0 +1,57 @@
+Checklist+ 1.0.0
+---------- -----
+
+Initial Release:
+
+Build for Sublime 4.
+
+Checklists: (all take x or . to fill)
+
+[ ] Bracket
+( ) Paren
+< > Angle Bracket
+{ } Curly Bracket
+
+Bullets:
+
+* List Star
+- List Dash
+> List Prompt
+. List Dot
+
+Numbered Lists:
+
+1. Item one
+32. Item 32. 
+
+Heading Indicators:
+
+# H1 
+## H2 
+### H3 
+
+=> A different kind of line 
+==> A lesser one of those
+
+Comments:
+
+:: Type 1 (single line)
+// Type 2 (single line)
+<-- block  --> (multiline)
++-  block2 -+  (multiline)
+/*  block3 */  (multiline)
+
+Links:
+
+/* NOTE:
+
+   Links can be followed by right-clicking.
+   All links will trigger syntax /string/
+   But if the file doesn't match a filename on your drive 
+     in the current folder hierarchy; no arrow Indicators
+    will appear.
+
+*/
+
+/link/ :: Right-click to load the nearby link.ckl file in Sublime 4
+

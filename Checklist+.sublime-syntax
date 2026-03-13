@@ -1,0 +1,114 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+name: Checklist+
+file_extensions: [ ckl ]
+scope: source.ckl
+contexts:
+  main:
+    - match: '\[ \]'
+      scope: checkbox.level1
+    - match: '\[x\]'
+      scope: checkbox.level1.filled
+    - match: '\[\.\]'
+      scope: checkbox.level1.paused
+    - match: '\( \)'
+      scope: checkbox.level2
+    - match: '\(x\)'
+      scope: checkbox.level2.filled
+    - match: '\(\.\)'
+      scope: checkbox.level2.paused
+    - match: '< >'
+      scope: checkbox.level3
+    - match: '<x>'
+      scope: checkbox.level3.filled
+    - match: '<\.>'
+      scope: checkbox.level3.paused
+    - match: '{ }'
+      scope: checkbox.level4
+    - match: '{x}'
+      scope: checkbox.level4.filled
+    - match: '{\.}'
+      scope: checkbox.level4.paused
+    - match: ^\s*\*
+      scope: list
+    - match: ^\s*-
+      scope: list.variant1
+    - match: ^\s*>
+      scope: list.variant2
+    - match: ^\s*\.
+      scope: list.variant3
+    - match: ^\s*\d+\.
+      scope: list.numeric
+    - match: =>\s
+      push: annotation1
+    - match: ==>\s
+      push: annotation2
+    - match: '//'
+      push: comment
+    - match: '\:\:'
+      push: highlight
+    - match: ^#\s
+      push: header1
+    - match: ^##\s
+      push: header2
+    - match: ^###\s
+      push: header3
+    - match: <--
+      push: block1
+    - match: \+-
+      push: block2
+    - match: /\*
+      push: block3
+    - match: '/[\w\-\. ]+/'
+      scope: markup.link
+
+  annotation1:
+    - meta_scope: annotation.level1
+    - match: '\n'
+      pop: true
+
+  annotation2:
+    - meta_scope: annotation.level2
+    - match: '\n'
+      pop: true
+
+  comment:
+    - meta_scope: comment
+    - match: \n
+      pop: true
+
+  highlight:
+    - meta_scope: highlight
+    - match: '\n'
+      pop: true
+
+  header1:
+    - meta_scope: header.level1
+    - match: '\n'
+      pop: true
+
+  header2:
+    - meta_scope: header.level2
+    - match: '\n'
+      pop: true
+
+  header3:
+    - meta_scope: header.level3
+    - match: '\n'
+      pop: true
+
+  block1:
+    - meta_scope: comment.block
+    - match: ->
+      pop: true
+
+  block2:
+    - meta_scope: comment.block.variant1
+    - match: -\+
+      pop: true
+
+  block3:
+    - meta_scope: comment.block.variant2
+    - match: \*/
+      pop: true
