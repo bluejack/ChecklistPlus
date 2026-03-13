@@ -1,0 +1,28 @@
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+*.cache
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
