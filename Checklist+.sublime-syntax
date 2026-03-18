@@ -3,7 +3,7 @@
 # See http://www.sublimetext.com/docs/syntax.html
 name: Checklist+
 file_extensions: [ ckl ]
-scope: source.ckl
+scope: markdown.ckl
 contexts:
   main:
     - match: '\[ \]'
