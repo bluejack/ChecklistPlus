@@ -94,7 +94,7 @@
         },
         {   "name": "List Level 1",
             "scope": "list.variant1",
-            "foreground": "rgb(255,60,0",
+            "foreground": "rgb(255,60,0)",
             "font_style": "bold"
         },
         {   "name": "List Level 2",
@@ -161,7 +161,14 @@
         {
             "name": "Link",
             "scope": "markup.link",
-            "foreground": "rgb(120,240,255)"
+            "foreground": "rgb(120,240,255)",
+            "font_style": "underline"
+        },
+        {
+            "name": "Link",
+            "scope": "markup.fileref",
+            "foreground": "rgb(120,240,255)",
+            "font_style": "underline"
         }
 
 
