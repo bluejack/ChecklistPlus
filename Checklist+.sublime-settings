@@ -1,3 +1,5 @@
 {
-    "color_scheme": "Packages/CheklistPlus/Checklist+.sublime-color-scheme"
+    "color_scheme": "Packages/CheklistPlus/Checklist+.sublime-color-scheme",
+    "word_wrap": true,
+    "wrap_width": 0
 }
