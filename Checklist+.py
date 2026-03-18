@@ -4,16 +4,43 @@ import sublime_plugin
 import os
 import re
 
-def find_ckl_file(view, name):
-    """Search current file's dir and all subdirs for name.ckl"""
-    current_file = view.file_name()
-    if not current_file:
-        return None
-    base_dir = os.path.dirname(current_file)
-    target = name + ".ckl"
+LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
+
+def _walk_for(base_dir, target):
+    """Walk base_dir tree looking for target filename; return full path or None."""
     for root, dirs, files in os.walk(base_dir):
         if target in files:
             return os.path.join(root, target)
+    return None
+
+
+def find_ckl_file(view, name):
+    """Search for name.ckl starting from the current file's dir, then project folders."""
+    target = name + ".ckl"
+
+    # First: search from the current file's directory downward
+    current_file = view.file_name()
+    base_dir = os.path.dirname(current_file) if current_file else None
+    if base_dir:
+        result = _walk_for(base_dir, target)
+        if result:
+            return result
+
+    # Then: search from each project folder root.
+    # Skip folders already fully covered by the base_dir search above
+    # (i.e., folder is equal to or a subdirectory of base_dir).
+    window = view.window()
+    if window:
+        for folder in window.folders():
+            norm_folder = os.path.normcase(os.path.normpath(folder))
+            if base_dir:
+                norm_base = os.path.normcase(os.path.normpath(base_dir))
+                if norm_folder.startswith(norm_base + os.sep) or norm_folder == norm_base:
+                    continue
+            result = _walk_for(folder, target)
+            if result:
+                return result
+
     return None
 
 
@@ -86,6 +113,3 @@ class OpenCklUnderCursorCommand(sublime_plugin.TextCommand):
 
     def want_event(self):
         return True
-
-LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
-
