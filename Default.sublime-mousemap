@@ -1,6 +1,8 @@
 [{
     "button": "button2",
-    "press_first": false,
     "command": "open_ckl_under_cursor",
-    "want_event": true
+    "want_event": true,
+    "context": [
+        { "key": "selector", "operator": "equal", "operand": "markdown.ckl" }
+    ]
 }]

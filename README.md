@@ -114,10 +114,18 @@ Wrap any filename (without extension) in forward slashes to create a live link:
 ```
 
 - If a matching `.ckl` file exists in the same folder or any subfolder, it becomes **clickable**
-- **Right-click** (or two-finger click on trackpad) anywhere on the link to open the file
+- **Right-click** (or two-finger tap on trackpad) anywhere on the link to open the file
 - Unresolved links render as plain text so you know when you made a typo.
 
 This turns a folder of `.ckl` files into a lightweight personal wiki.
+
+---
+
+## External Links
+
+Standard markdown format [link](https://example.com) will also create a clickable
+link within the bracketed name of the link, which can be followed using the same right
+click action.
 
 ---
 
@@ -140,6 +148,11 @@ the pull request back to that branch.
 ---
 
 ## Changelog
+
+### v1.1.0 - Minor release: external links (2026.03.18)
+
+* Add support for clickable external links in markdown format
+* Tweak styling of links to be more intuitive
 
 ### v1.0.1 - Patch release (2026.03.18)
 
