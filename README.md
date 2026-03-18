@@ -141,6 +141,10 @@ the pull request back to that branch.
 
 ## Changelog
 
+### v1.0.1 - Patch release (2026.03.18)
+
+* Tweaks to improve paragraph display for longer text.
+
 ### v1.0.0 - Initial Publication (2026.03.13)
 
 * Checklist of various types

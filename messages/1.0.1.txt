@@ -1,0 +1,5 @@
+Checklist+ 1.0.1
+---------- -----
+
+* Tweaks to support paragraph display in longer text.
+
